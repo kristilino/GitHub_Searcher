@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="d-flex m-auto p-2 justify-content-center">
+<input type="text" placeholder="Enter GitHub Username" oninput="getUsername(this)">
+
+
+<button class="btn btn-success ml-2" onclick="search(); repos_search2(); repos_search_event(); ">Search</button>
+
+    </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+
+            <p class="cards text-center p-5">The results will appear here</p>
+        </div>
+        
+        <div class="col-6">
+            <p class="cards1 text-center p-5 ">Other GitHub information will appear here</p>
+        </div>
+    </div>
+
+    <div class="container">
+    <div class="row">
+
+        <div class="col-12">
+            <p class="cards2 text-center bg-trasparent text-white p-5">The repositories will appear here</p>
+        </div>
+        
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
